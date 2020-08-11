@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/style.css">
+        <title>Home</title>
+    </head>
+    <body> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!--This is the fixed header with the links to other pages.-->
+    <header class="header-fixed">
+      <div class="header">
+          <div>
+            <ul id="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown"><span tabindex="-1" class="dropdown__title" id="dropdown-title">More</span>
+                    <ul class="dropdown__menu" aria-labelledby="dropdown-title">
+                        <li><a href="Recipes.html">Recipes</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                        <li><a href="Pages/settings.html">Settings</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </div>
+          <div class="search-bar">
+            <button>Search</button>
+            <input type="search" placeholder="Search Foods Here">
+          </div>
+  </header>
+
+        <!--The fixed Newsletter button that will display a popup.-->
+        <input id="Popupbtn" type="image" src="images/newsletter.png">
+
+      <!--The popup content.-->
+      <div class="popup" id="popup-1">
+        <div class="overlay"> </div>
+        <div class="none" id="popupContent">
+            <div id="closed" class="close">&times;</div>
+            <div id="newsletter-head"><h1>NewsLetter</h1></div>
+            <p>Sign up to get updates on our delicious food!</p>
+            <br>
+            <hr>
+            <div id="newsletter-end">
+            <input type="email" placeholder="Enter Email">
+            <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+        <!--clickable images-->
+        <div class="wrapper">
+
+            <div class="container" id="item1">
+                <img src="images/BeefBurger.jpg" alt="Avatar" class="image" style="width:100%" onclick="Burger()">
+                <div class="middle">
+                  <div class="text"><h4>Beef Burger with Mushroom Sauce</h4><hr>
+                    "I enjoyed this so much, would make again"<br> - Johann<hr><a class="hide">Hide</a></div>
+                </div>
+                <div class="like-bar">
+                  <img id="like1" src="images/like.png">
+                </div>
+              </div>
+
+              <div class="container" id="item2">
+                <img src="images/Stew.jfif" alt="Avatar" class="image" style="width:100%" onclick="Stew()">
+                <div class="middle">
+                  <div class="text"><h4>Chicken & Kale Stew</h4><hr>
+                    "To have thought chicken and kale would be so good!"<br> - Peter<hr><a class="hide">Hide</a></div>
+                </div>
+                <div class="like-bar">
+                  <img id="like2" src="images/like.png">
+                </div>
+              </div>
+
+              <div class="container" id="item3">
+                <img src="images/poppers.jpeg" alt="Avatar" class="image" style="width:100%" onclick="Poppers()">
+                <div class="middle">
+                  <div class="text"><h4>Cheese-Stuffed Jalapeño Poppers</h4><hr>
+                    "Best recipe i have found online"<br> -TobyX<hr><a class="hide">Hide</a></div>
+                </div>
+                <div class="like-bar">
+                  <img id="like3" src="images/like.png">
+                </div>
+              </div>
+
+              <div class="container" id="item4">
+                <img src="images/pizza.jpg" alt="Avatar" class="image" style="width:100%" onclick="Pizza()">
+                <div class="middle">
+                  <div class="text"><h4>Pizza Margherita</h4><hr>
+                    "This pizza tastes just like the one at Pizza Hut" -John<hr><a class="hide">Hide</a></div>
+                </div>
+                <div class="like-bar">
+                  <img id="like4" src="images/like.png">
+                </div>
+              </div>
+
+              <div class="container" id="item5">
+                <img src="images/noodles.jfif" alt="Avatar" class="image" style="width:100%" onclick="Noodles()">
+                <div class="middle">
+                  <div class="text"><h4>Fiery Chicken And Rice Noodles</h4><hr>
+                    "These noodles are spicy damn"<br> -Todd Howard<hr><a class="hide">Hide</a></div>
+                </div>
+                <div class="like-bar">
+                  <img id="like5" src="images/like.png">
+                </div>
+              </div>
+
+              <div class="container" id="item6">
+                <img src="images/braciole.jpg" alt="Avatar" class="image" style="width:100%" onclick="Braciole()">
+                <div class="middle">
+                  <div class="text"><h4>Twist On Italian Braciole In Marinara Sauce</h4><hr>
+                    "I love Italians!"<br> -Jessie<hr><a class="hide">Hide</a></div>
+                </div>
+                <div class="like-bar">
+                  <img id="like6" src="images/like.png">
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--The footer containng social media links-->
+        <footer>
+            <div class="footer">
+                <p>&copy;Copyright 2020 Brandon-Lee</p>
+                  <input type="image" src="images/twitterIcon.png">
+                  <input type="image" src="images/googleIcon.png">
+                  <input type="image" src="images/instaIcon.png">
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

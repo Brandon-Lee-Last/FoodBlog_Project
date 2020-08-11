@@ -1,0 +1,40 @@
+#aboutus{
+    padding: 200px 150px 0 150px;
+
+    .text-center{
+        text-align: center;
+    }
+
+    .col{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    p{
+        line-height: 24px;
+        text-align: left;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    img{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+
+    button{
+        @extend .styled-button !optional;
+
+        a{
+            width: 40px;
+            text-decoration: none;
+    
+            a{
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body id="body">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!--This is the fixed header with the links to other pages.-->
+      <header class="header-fixed">
+          <div class="header">
+              <div>
+                <ul id="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li class="dropdown"><span tabindex="-1" class="dropdown__title" id="dropdown-title">More</span>
+                        <ul class="dropdown__menu" aria-labelledby="dropdown-title">
+                            <li><a href="../Recipes.html">Recipes</a></li>
+                            <li><a href="../favorites.html">Favorites</a></li>
+                            <li><a href="settings.html">Settings</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+              </div>
+              <div class="search-bar">
+                <button>Search</button>
+                <input type="search" placeholder="Search Foods Here">
+              </div>
+      </header>
+
+      <diV class="container">
+        <div class="content-page">
+            <h1>Settings</h1>
+            <div class="settings-content">
+                <div class="settings-color">
+                    <h5 id="color-h">Set Color Theme</h5>
+                    <select id="color" class="selector">
+                        <option value="0">White</option>
+                        <option value="1">LightGrey</option>
+                        <option value="2">LightBlue</option>
+                        <option value="3">Pink</option>
+                        <option value="4">Red</option>
+                    </select>
+                </div>
+                <div class="settings-font">
+                    <h5 id="font-h">Set Font</h5>
+                    <select id="font" class="selector">
+                        <option value="0">Comic Sans MS</option>
+                        <option value="1">Arial</option>
+                        <option value="2">Roboto</option>
+                        <option value="3">Courier</option>
+                        <option value="4">Impact</option>
+                    </select>
+                </div>
+                <div class="settings-shadow">
+                    <h5 id="shadow-h">Shadow Effect</h5>
+                    <select id="shadow" class="selector">
+                        <option value="False">Off</option>
+                        <option value="True">On</option>
+                    </select>
+                </div>
+                <div class="settings-chanied-effect">
+                    <h5 id="chain-h">Chained Effect</h5>
+                    <select id="chain" class="selector">
+                        <option value="False">Off</option>
+                        <option value="True">On</option>
+                    </select>
+                </div>
+            </div>
+            <button id="SaveTheme">Save</button>
+        </div>
+      </diV>
+    
+      <script src="../js/settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>About</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <!--This is the fixed header with the links to other pages.-->
+    <header class="header-fixed">
+        <div class="header">
+            <div>
+              <ul id="links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li class="dropdown"><span tabindex="-1" class="dropdown__title" id="dropdown-title">More</span>
+                      <ul class="dropdown__menu" aria-labelledby="dropdown-title">
+                          <li><a href="Recipes.html">Recipes</a></li>
+                          <li><a href="favorites.html">Favorites</a></li>
+                          <li><a href="Pages/settings.html">Settings</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar">
+              <button>Search</button>
+              <input type="search" placeholder="Search Foods Here">
+            </div>
+    </header>
+    <!--About us content-->
+    <section id="aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <img src="images/about.jpg" alt="avatar">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-center">About Us</h2>
+                        <p>We are chefs that take our food serious and we love to make people enjoy their meals, either in person or onlne like we have going Here,
+                            We have 10 plus years in the cooking industry and its not about to stop anytime soon, so jump in and take down the recipe and get
+                            to cooking.
+                        </p>
+                            <br>
+                            <h4>Inspirational Message from us</h4>
+                            <br>
+                            <p>There are many times in my life, when I could've thrown in the towel. Many times in my life when I was on the floor.
+                                 And when you're on the floor, never allow anybody to pick you up. It doesn't matter how long you stay there, make
+                                  sure you pick yourself up and dust yourself down. Whatever happens, whether you go home today or you don't go
+                                   home today, that's irrelevant. What's relevant, is you take the knowledge from the experience and you grow as a person.</p>
+                            <br>
+                            <button><a href="contact.html">Contact Us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="js/about.js"></script>
+</body>
+</html>

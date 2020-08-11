@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!--This is the fixed header with the links to other pages.-->
+    <header class="header-fixed">
+        <div class="header">
+            <div>
+              <ul id="links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li class="dropdown"><span tabindex="-1" class="dropdown__title" id="dropdown-title">More</span>
+                      <ul class="dropdown__menu" aria-labelledby="dropdown-title">
+                          <li><a href="Recipes.html">Recipes</a></li>
+                          <li><a href="favorites.html">Favorites</a></li>
+                          <li><a href="Pages/settings.html">Settings</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar">
+              <button>Search</button>
+              <input type="search" placeholder="Search Foods Here">
+            </div>
+    </header>
+    <!--Content-->
+    <div class="spacer"></div>
+    <div class="contact-section">
+        <div class="inner-width">
+            <h1>Get In Contact With Us</h1>
+            <input type="text" class="name" placeholder="Your Name">
+            <input type="email" class="email" placeholder="Your Email">
+            <textarea  rows="1" placeholder="Message" class="message"></textarea>
+            <button>Get In Touch</button>
+        </div>
+    </div>
+</body>
+</html>
