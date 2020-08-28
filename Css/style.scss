@@ -1,434 +1,433 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    outline-width: 0;
+@import "config";
+* {
+  margin: 0;
+  padding: 0;
+  outline-width: 0;
 }
 
-#liked_list{
-    text-align: center;
+#liked_list {
+  text-align: center;
 }
 
-.styled-button{
-    background: none;
-    color: #70a1ff;
-    border: 1px solid #70a1ff;
-    padding: 12px 40px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition: 0.4s linear;
-    cursor: pointer;
+.styled-button {
+  background: none;
+  color: #70a1ff;
+  border: 1px solid #70a1ff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
 }
 
-.styled-button:hover{
-    background: #70a1ff;
-    color: #fff;
+.styled-button:hover {
+  background: #70a1ff;
+  color: #fff;
 }
 
-.liked{
-
-    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(1000%) contrast(80%);
+.liked {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(1000%) contrast(80%);
 }
 
 //The styling for the popup content and button.
-#Popupbtn{
-    position: fixed;
-    margin: 120px 0 0 20px;
-    width: 40px;
-    height: 40px;
-    transition: 0.4s ease-in;
+#Popupbtn {
+  position: fixed;
+  margin: 120px 0 0 20px;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s ease-in;
 }
 
-.show{
-    border: 0;
-    background-color: transparent;
-    font-size: 20px;
-    cursor: pointer;
-    color: black;
-    text-shadow: 1px 1px black;
+.show {
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  text-shadow: 1px 1px black;
 }
 
-.show:hover{
-    text-decoration: underline;
+.show:hover {
+  text-decoration: underline;
 }
 
-.show:focus{
-    outline-width: 0;
+.show:focus {
+  outline-width: 0;
 }
 
-#Popupbtn:hover{
-    transform: scale(1.2);
+#Popupbtn:hover {
+  transform: scale(1.2);
 }
 
-.hide{
-    text-decoration: underline;
-    cursor: pointer;
+.hide {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.hide:hover{
-    color: pink;
+.hide:hover {
+  color: pink;
 }
 
-
-.overlay{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    display: none;
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: none;
 }
 
-#newsletter-head{
-    width: 80%;
-    margin: 0 auto;
-    height: 50px;
-    border-radius: 20px;
+#newsletter-head {
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 20px;
 }
 
-.Popcontent{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
+.Popcontent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 40%;
+  height: 200px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  hr {
     width: 40%;
-    height: 200px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 0 auto;
+  }
 
-    hr{
-        width: 40%;
-        margin: 0 auto;
-    }
-
-    #newsletter-end{
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: 70% 30%;
-        height: 30px;
-
-        button{
-            background: none;
-            border: 1px solid black;
-            text-transform: uppercase;
-            font-size: 14px;
-            transition: 0.4s linear;
-            cursor: pointer;
-            margin-left: 20px;
-        }
-
-        button:hover{
-            border: 1px solid red;
-            color: red;
-        }
-
-        input{
-            padding: 5px;
-        }
-
-    }
-}
-
-.none{
-    display: none;
-}
-
-.close{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
+  #newsletter-end {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 70% 30%;
     height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
+
+    button {
+      background: none;
+      border: 1px solid black;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: 0.4s linear;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+
+    button:hover {
+      border: 1px solid red;
+      color: red;
+    }
+
+    input {
+      padding: 5px;
+    }
+  }
 }
 
-.popup:active{
-    display: block;
+.none {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup:active {
+  display: block;
 }
 //end--
 
-.active{
-    text-decoration: underline;
+.active {
+  text-decoration: underline;
 }
 
 //header content styling.
-.header-fixed{
-
-    .header{
-        display: grid;
-        grid-template-columns: 40% 60%;
-        background-color: rebeccapurple;
-        height: 50px;
-        padding: 20px 10px 20px 10px;
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        text-align: center;
-
-        .search-bar{
-            margin: 10px 30px 0 0;
-            input{
-                width: 20%;
-                float: right;
-                padding: 10px;
-                border: 0;
-                background-color: transparent;
-                border: 0;
-                display: flex;
-                margin-right: 10px;
-                transition: ease-in 0.7s;
-                color: white;
-            }
-        
-            input:focus {
-                outline-width: 0;
-                border-bottom: 1px white solid;
-            }
-        
-            button{
-                float: right;
-                font-size: 10px;
-                text-align: center;
-                text-transform: uppercase;
-                transition: 0.5s;
-                background-size: 200% auto;
-                color: #FFF;
-                box-shadow: 0 0 20px #eee;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                cursor: pointer;
-                height: 28px;
-                border: 0;
-                width: 12%;
-                margin-top: 2px;
-                border-radius: 15px;
-            }
-        
-            button:focus{
-                outline-width: 0;
-            }
-
-            button{background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
-            button:hover { background-position: right center;}
-    
-        }
-          
-        ul{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            grid-auto-flow: column;
-          
-            li{
-                padding: 0;
-                margin: 0 0.5rem;
-                display: inline;
-    
-                a,
-                .dropdown__title {
-                  text-decoration: none;
-                  text-align: center;
-                  display: inline-block;
-                  color: white;
-                  font-size: 20px;
-                }
-                
-                // Only direct links contained in the li
-                > a,
-                .dropdown__title {
-                  padding: 1rem 0.5rem;
-                }
-              }
-            }
-    
-            .dropdown{
-                position: relative;
-              
-                .dropdown__menu {
-                  background-color: #fff;
-                  border-radius: 4px;
-                  box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
-                  padding: 0.5em 0;
-                  min-width: 15ch;
-                  margin-top: 10px;
-              
-                  a {
-                    color: #444;
-                    display: block;
-                    padding: 0.5em;
-                  }
-                }
-            }
-    
-            .dropdown__menu {
-                // ... existing styles
-              
-                position: absolute;
-              
-                // Pull up to overlap the parent list item very slightly
-                top: calc(100% - 0.25rem);
-                // Use the left from absolute position to shift the left side
-                left: 50%;
-                // Use translateX to shift the menu 50% of it's width back to the left 
-                transform: translateX(-50%);
-            }
-    
-            .dropdown__menu {
-                // ... existing styles
-                transform: rotateX(-90deg) translateX(-50%);
-                transform-origin: top center;
-                opacity: 0.3;
-            }
-    
-            .dropdown__menu {
-                // ... existing styles
-                transition: 280ms all ease-out;
-            }
-    
-            .dropdown {
-                // ... existing styles
-              
-                &:hover,
-                &:focus-within {
-              
-                  .dropdown__menu {
-                    opacity: 1;
-                    transform: rotateX(0) translateX(-50%);
-                  } 
-              
-                }
-              
-            }
-    
-            .dropdown__menu {
-                // ... existing styles
-                transition: 280ms all 120ms ease-out;
-            }
-    
-            .dropdown {
-                // ... existing styles
-              
-                  .dropdown__title {
-                    display: inline-flex;
-                    align-items: center;
-                    pointer-events: none;
-              
-                    &:after {
-                      content: "";
-                      border: 0.35rem solid transparent;
-                      border-top-color: rgba(blue, 0.45);
-                      margin-left: 0.25em;
-                      transform: translateY(0.15em);
-                    }
-                }
-              
-            } 
-        }
-}
-//end--
-
-
-//styling of wrapper content.
-.wrapper{
+.header-fixed {
+  .header {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    padding-top: 150px;
-    margin-left: 150px;
-
-    .container {
-        position: relative;
-        margin: 20px 20px;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-
-        .like-bar{
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-
-            img{
-                width: 40px;
-                height: 40px;
-                cursor: pointer;
-            }
-        }
-    }
-      
-    .image {
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: 350px;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        cursor: pointer;
-        
-    }
-      
-    .middle {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-    }
-      
-      .container:hover .image {
-        opacity: 0.3;
-    }
-      
-      .container:hover .middle {
-        opacity: 1;
-    }
-      
-    .text {
-        background-color: #4CAF50;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
-    }
-}
-//end--
-
-
-//styling for footer.
-.footer{
-    margin-top: 100px;
-    padding:10px;
-    width: 100%;
+    grid-template-columns: 40% 60%;
+    background-color: rebeccapurple;
     height: 50px;
-    background-color: darken(white, 5);
-    box-shadow: 0 2px 2px 2px gray;
-    font-size: 14px;
+    padding: 20px 10px 20px 10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     text-align: center;
 
-        input{
-            float: left;
-            width: 30px;
-            height: 30px;
-            margin-right: 20px;
-            border: 0;
+    .search-bar {
+      margin: 10px 30px 0 0;
+      input {
+        width: 20%;
+        float: right;
+        padding: 10px;
+        border: 0;
+        background-color: transparent;
+        border: 0;
+        display: flex;
+        margin-right: 10px;
+        transition: ease-in 0.7s;
+        color: white;
+      }
+
+      input:focus {
+        outline-width: 0;
+        border-bottom: 1px white solid;
+      }
+
+      button {
+        float: right;
+        font-size: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: #fff;
+        box-shadow: 0 0 20px #eee;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        cursor: pointer;
+        height: 28px;
+        border: 0;
+        width: 12%;
+        margin-top: 2px;
+        border-radius: 15px;
+      }
+
+      button:focus {
+        outline-width: 0;
+      }
+
+      button {
+        background-image: linear-gradient(
+          to right,
+          #dd5e89 0%,
+          #f7bb97 51%,
+          #dd5e89 100%
+        );
+      }
+      button:hover {
+        background-position: right center;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      grid-auto-flow: column;
+
+      li {
+        padding: 0;
+        margin: 0 0.5rem;
+        display: inline;
+
+        a,
+        .dropdown__title {
+          text-decoration: none;
+          text-align: center;
+          display: inline-block;
+          color: white;
+          font-size: 20px;
         }
+
+        // Only direct links contained in the li
+        > a,
+        .dropdown__title {
+          padding: 1rem 0.5rem;
+        }
+      }
+    }
+
+    .dropdown {
+      position: relative;
+
+      .dropdown__menu {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+        padding: 0.5em 0;
+        min-width: 15ch;
+        margin-top: 10px;
+
+        a {
+          color: #444;
+          display: block;
+          padding: 0.5em;
+        }
+      }
+    }
+
+    .dropdown__menu {
+      // ... existing styles
+
+      position: absolute;
+
+      // Pull up to overlap the parent list item very slightly
+      top: calc(100% - 0.25rem);
+      // Use the left from absolute position to shift the left side
+      left: 50%;
+      // Use translateX to shift the menu 50% of it's width back to the left
+      transform: translateX(-50%);
+    }
+
+    .dropdown__menu {
+      // ... existing styles
+      transform: rotateX(-90deg) translateX(-50%);
+      transform-origin: top center;
+      opacity: 0.3;
+    }
+
+    .dropdown__menu {
+      // ... existing styles
+      transition: 280ms all ease-out;
+    }
+
+    .dropdown {
+      // ... existing styles
+
+      &:hover,
+      &:focus-within {
+        .dropdown__menu {
+          opacity: 1;
+          transform: rotateX(0) translateX(-50%);
+        }
+      }
+    }
+
+    .dropdown__menu {
+      // ... existing styles
+      transition: 280ms all 120ms ease-out;
+    }
+
+    .dropdown {
+      // ... existing styles
+
+      .dropdown__title {
+        display: inline-flex;
+        align-items: center;
+        pointer-events: none;
+
+        &:after {
+          content: "";
+          border: 0.35rem solid transparent;
+          border-top-color: rgba(blue, 0.45);
+          margin-left: 0.25em;
+          transform: translateY(0.15em);
+        }
+      }
+    }
+  }
 }
 //end--
 
+//styling of wrapper content.
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  padding-top: 150px;
+  margin-left: 150px;
+
+  .container {
+    position: relative;
+    margin: 20px 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+
+    .like-bar {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+
+      img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 350px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+  }
+
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+//end--
+
+//styling for footer.
+.footer {
+  margin-top: 100px;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: darken(white, 5);
+  box-shadow: 0 2px 2px 2px gray;
+  font-size: 14px;
+  text-align: center;
+
+  input {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border: 0;
+  }
+}
+
+//end--
 
 //imports of all other sccs files.
-@import 'contact';
-@import 'recipes';
-@import 'about';
-@import 'prep';
-@import 'settings';
+@import "contact";
+@import "recipes";
+@import "about";
+@import "prep";
+@import "settings";
+@import "mobile";

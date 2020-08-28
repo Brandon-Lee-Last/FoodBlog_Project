@@ -30,18 +30,6 @@
   margin-bottom: 40px;
 }
 
-::-webkit-input-placeholder {
-  color: #cccccc;
-}
-
-:-ms-input-placeholder {
-  color: #cccccc;
-}
-
-::-ms-input-placeholder {
-  color: #cccccc;
-}
-
 ::placeholder {
   color: #cccccc;
 }
@@ -69,7 +57,6 @@
   border-radius: 8px;
   text-transform: uppercase;
   font-size: 14px;
-  -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
   cursor: pointer;
 }

@@ -1,0 +1,105 @@
+@include mediaSm {
+}
+
+@include mediaMd {
+  #Popupbtn {
+    z-index: 3;
+  }
+
+  .Popcontent {
+    width: 90%;
+    margin-left: -10px;
+  }
+  .header-fixed {
+    .header {
+      .search-bar {
+        display: none;
+      }
+      #links {
+        display: grid;
+        grid-template-columns: auto;
+
+        li {
+          .dropdown__menu {
+            margin-left: -50px;
+          }
+        }
+      }
+    }
+  }
+
+  div.wrapper {
+    display: block;
+    margin-left: 0;
+  }
+
+  .footer {
+    input {
+      width: 7%;
+      height: 60%;
+      float: none;
+      margin-top: 10px;
+    }
+  }
+
+  .container-2 {
+    padding: 10px 30px;
+  }
+
+  #aboutus {
+    padding: 150px 50px 50px 50px;
+    margin-left: 0;
+    margin-left: -100px;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+@include mediaLg {
+  .header-fixed {
+    .header {
+      .search-bar {
+        width: 100%;
+        margin-left: -100px;
+      }
+      #links {
+        display: grid;
+        grid-template-columns: auto;
+
+        li {
+          .dropdown__menu {
+            margin-left: -50px;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    margin-left: 10px;
+    margin-right: -70px;
+  }
+
+  #Popupbtn {
+    z-index: 3;
+  }
+
+  #aboutus {
+    padding: 150px 50px 50px 50px;
+    margin-left: 0;
+    margin-left: -300px;
+
+    img {
+      display: none;
+    }
+  }
+
+  .container-2 {
+    padding: 10px 30px;
+  }
+}
+
+@include mediaXl {
+}
