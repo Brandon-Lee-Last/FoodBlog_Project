@@ -3,22 +3,18 @@ A blog website that gives viewers differnt options of food recipes they should t
 that users can follow.
 
 # ---- Skills Learned ----
- *Making each recipe page likable by putting it into a local storage as a whole, and then diplaying it in a favorites page.
- 
- *Scss(SASS) and Jquery animations, such as the nav bar, like button that glows and reverts back each toggle.
- 
- *Front end color and font schemes applied that helps the page look more attractive.
- 
- *Media queries that scale the page to the right screen size.
- 
- *DOM Manipulation, this was used to help manipulate the html documents.
+ * Making each recipe page likable by putting it into a local storage as a whole, and then diplaying it in a favorites page.
+ * Scss(SASS) and Jquery animations, such as the nav bar, like button that glows and reverts back each toggle.
+ * Front end color and font schemes applied that helps the page look more attractive.
+ * Media queries that scale the page to the right screen size.
+ * DOM Manipulation, this was used to help manipulate the html documents.
  
  
 # ---- Technologies used ----
-  *Jquery
-  *Sass
-  *HTML
-  *Javascript
+  * Jquery
+  * Sass
+  * HTML
+  * Javascript
   
   
 # ---- How to use? ----
