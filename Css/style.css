@@ -635,6 +635,30 @@
   #Popupbtn {
     z-index: 3;
   }
+  .container1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .container1 .content {
+    width: 100%;
+  }
+  .container1 iframe {
+    width: 88%;
+  }
+  .container1 .wrap-2 {
+    display: block;
+    width: 100%;
+  }
+  .container1 .wrap-2 .ingr {
+    margin-top: -20px;
+  }
+  .container1 .wrap-2 .prep {
+    margin-top: 30px;
+  }
+  .container1 .wrap-2 ol {
+    width: 80%;
+  }
   .Popcontent {
     width: 90%;
     margin-left: -10px;
@@ -663,7 +687,7 @@
     padding: 10px 30px;
   }
   #aboutus {
-    padding: 150px 50px 50px 50px;
+    padding: 150px 70px 50px 50px;
     margin-left: 0;
     margin-left: -100px;
   }
