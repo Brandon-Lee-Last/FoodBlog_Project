@@ -1,6 +1,5 @@
 # ---- Food Blog ---- 
-A blog website that gives viewers differnt options of food recipes they should try, each recipe can be liked and put into a favorite system, each recipe page has a video tutorial
-that users can follow.
+A blog website that gives users different options of food recipes they should try, each recipe can be liked and put into a favorite system, each recipe page has a video tutorial that users can follow.
 
 # ---- Skills Learned ----
  * Making each recipe page likable by putting it into a local storage as a whole, and then diplaying it in a favorites page.
